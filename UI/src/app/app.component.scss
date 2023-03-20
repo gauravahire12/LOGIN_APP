@@ -1,0 +1,32 @@
+.auth-body{
+    height: 100vh;
+    display: flex;
+    padding: 5% 10%;
+    box-shadow: 0 0 20px red;
+    &__left-section{
+        flex: 1;
+        background-color: rgb(178, 101, 255);
+        border-radius: 10px 0 0 10px;
+    }
+    &__right-section{
+        flex: 1;
+        border-radius: 0 10px 10px 0;
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(255, 255, 255);
+        &__footer{
+            padding: 20px 0 0 0;
+            color: blueviolet;
+            cursor: pointer;
+            span{
+                color: black
+            }
+        }
+    }
+}
+
+.centerized{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

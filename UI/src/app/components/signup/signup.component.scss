@@ -1,0 +1,47 @@
+.signup{
+    &__header{
+        flex-direction: column;
+        &__welcome-img{
+            img{
+                border-radius: 50%;
+                height: 120px;
+            }
+        }
+        &__welcome-content{
+            font-size: 22px;
+            font-weight: 600;
+        }
+    }
+    &__body{
+        display: flex;
+        flex-direction: column;
+        &__username,&__password{
+            input{
+                padding: 10px;
+                width: 300px;
+            }  
+        }
+    }
+    &__footer{
+        width: 100%;
+        button{
+            width: 100%;
+            padding: 10px;
+            color: rgb(255, 255, 255);
+            background-color: rgb(178, 101, 255);
+            border: none;
+            font-weight: 600;
+            cursor: pointer;
+        }
+    }
+}
+
+.centerized{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.padding_10{
+    padding: 10px;
+}

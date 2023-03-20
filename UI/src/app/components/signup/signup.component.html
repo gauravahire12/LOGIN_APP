@@ -1,0 +1,26 @@
+<div class="signup">
+    <div class="signup__header">
+        <div class="signup__header-welcome-img"></div>
+        <div class="signup__header-welcome-content"></div>
+    </div>
+    <div class="signup__body">
+        <div class="signup__body__username padding_10">
+            <input type="text" name="username" placeholder="User Name" [(ngModel)]="userName">
+        </div>
+        <div class="signup__body__password padding_10">
+            <input type="text" name="password" placeholder="Email" [(ngModel)]="userEmail">
+        </div>
+        <div class="signup__body__username padding_10">
+            <input type="text" name="username" placeholder="Mobile Number" [(ngModel)]="userMobile">
+        </div>
+        <div class="signup__body__password padding_10">
+            <input type="text" name="password" placeholder="Password" [(ngModel)]="userPassword">
+        </div>
+        <div class="signup__body__username padding_10">
+            <input type="text" name="username" placeholder="Confirm Password" [(ngModel)]="userConfirmPassword">
+        </div>
+    </div>
+    <div class="signup__footer padding_10">
+       <button (click)="onSignUpClick()">SIGN UP</button>
+    </div>
+</div>

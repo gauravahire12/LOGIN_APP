@@ -1,0 +1,19 @@
+<div class="auth-body">
+  <div class="auth-body__left-section centerized">
+    <img src="https://cdni.iconscout.com/illustration/premium/thumb/account-security-4438904-3726714.png?f=webp" alt="">
+  </div>
+  <div class="auth-body__right-section centerized">
+    <ng-container *ngIf="isSignUp;else login">
+      <signup (userSignUpEvent)="onSignUp($event)"></signup>
+    </ng-container>
+
+    <div class="auth-body__right-section__footer" (click)="toggleView()">
+      <div *ngIf="!isSignUp"><span>Create a new account!</span> Sign Up</div>
+      <div *ngIf="isSignUp"><span>Already have an account?</span> Sign In</div>
+    </div>
+  </div>
+</div>
+
+<ng-template #login>
+  <login (userLoginEvent)="onLogin($event)"></login>
+</ng-template>

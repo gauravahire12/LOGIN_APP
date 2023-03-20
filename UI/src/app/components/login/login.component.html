@@ -1,0 +1,21 @@
+<div class="login">
+    <div class="login__header centerized">
+        <div class="login__header__welcome-img">
+            <img src="https://i.fbcd.co/products/resized/resized-750-500/robot-loggg-e43bdb33b92970f09aedc6e1ef942b67fea4f85d2b59edb304f81beaf28c7830.webp" alt="">
+        </div>
+        <div class="login__header__welcome-content">
+            Welcome Back!!
+        </div>
+    </div>
+    <div class="login__body">
+        <div class="login__body__username padding_10">
+            <input type="text" name="username" placeholder="User Name" [(ngModel)]="userName">
+        </div>
+        <div class="login__body__password padding_10">
+            <input type="password" name="password" placeholder="Password" [(ngModel)]="userPassword">
+        </div>
+    </div>
+    <div class="login__footer padding_10">
+        <button (click)="onSignInClick()">SIGN IN</button>
+    </div>
+</div>
